@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h2>Add New User</h2>
+    <form id="addUserForm">
+        <p>First Name: <input type="text" id='firstNameInput'></p>
+        <p>Last Name: <input type="text"id='lastNameInput'></p>
+        <p>Age: <input type="number", id='ageInput'></p>
+        <button>Submit</button>
+    </form>
+    <h2>All users</h2>
+    <ul id="usersList">
+    </ul>
+    <form id="postsForm">
+        <p>User ID: <input type="number" id='userID'></p>
+        <p>Post (only if you want to add a new post): <input type="text"id='postText'></p>
+        <button id="newPostButton">Submit</button>
+    </form>
+    <h2>All posts</h2>
+    <ul id="postsList">
+    </ul>
+    <form id="usersForm">
+        <p>User ID: <input type="number" id="userID2"></p>
+        <button id="getPostsByID">Get posts from user.</button>
+    </form>
+    <h2>All Posts from user</h2>
+    <ul id="postsFromUser">     
+    </ul>
+    <form id="likerForm">
+        <input type="number" id="postNumber">
+        <button id="likerButton">Get likes per post</button>
+    </form>
+    <h2 id="likesPerPost">Likes Per Post</h2>
+    <ul id="likesList">
+    </ul>
+    <form id="filterLikes">
+        <p> Looking for users with <input type="number" id="amountOfLikes"> or more likes</p>
+        <button id="filterButton">Filter</button>
+    </form>
+    <h2>Filtered Likes:</h2>
+    <ul id="filteredPostsList">
+    </ul>
+</body>
+</html>
